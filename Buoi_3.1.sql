@@ -24,7 +24,7 @@ INSERT INTO `laptop` VALUES (1,'Laptop ASUS VivoBook X407MA-BV169T (14\" HD/N500
 
 -- 1. Tìm kiếm các laptop có ram từ 4GB đến 8GB (Bao gồm cả 2 giá trị này)
 select * from laptop 
-where ram between "4GB" and "8GB"; -- sao chỗ này ram là varchar mà nó vẫn so sánh đc v 
+where ram between "4GB" and "8GB"; 
 
 -- 2. Tìm kiếm các laptop có ram=8GB, ssd=256GB
 select * from laptop
