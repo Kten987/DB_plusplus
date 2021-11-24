@@ -11,6 +11,7 @@ mycursor = mydb.cursor()
 def insert(input_name,input_link,input_maker,input_type):
     str2 = f"insert into laptop (name,url,maker,type) values ('{input_name}','{input_link}','{input_maker}','{input_type}');"
     mycursor.execute(str2)
+    mydb.commit()
     myresult1 = mycursor.fetchall()
     print(myresult1)
 
