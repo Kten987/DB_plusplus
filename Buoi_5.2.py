@@ -11,6 +11,7 @@ mycursor = mydb.cursor()
 def update_sold(id,up_sold):
     str = f"update laptop set sold = '{up_sold}' WHERE id='{id}';"
     mycursor.execute(str)
+    mydb.commit()
     mycursor.execute(f"select * from laptop where id = '{id}';")
     myresult = mycursor.fetchall()
     print(myresult)
